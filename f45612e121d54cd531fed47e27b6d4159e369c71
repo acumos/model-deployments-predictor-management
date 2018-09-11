@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bd241db1_340f6a93",
+        "filename": "setup.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-11T18:32:12Z",
+      "side": 1,
+      "message": "remove Tech Mahindra from license from everywhere",
+      "revId": "f45612e121d54cd531fed47e27b6d4159e369c71",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
