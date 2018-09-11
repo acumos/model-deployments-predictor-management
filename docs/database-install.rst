@@ -16,42 +16,13 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-===================================================
-Acumos Predictor Management Python Developer Guide
-===================================================
-More coming soon!
+==============================
+Mongo DB Server Instructions
+==============================
 
-Testing
-=======
+This mS uses mongoDB server community edition to store its documents and collections
+Note: Clients who want to run these mS on their own Linux environments have to install mongoDB server
 
-We use a combination of ``tox``, ``pytest``, and ``flake8`` to test
-``predictor-management``. Code which is not PEP8 compliant (aside from E501) will be
-considered a failing test. You can use tools like ``autopep8`` to
-“clean” your code as follows:
+Installation detail available at mongodb wiki
 
-.. code:: bash
-
-    $ pip install autopep8
-    $ cd predictor-management
-    $ autopep8 -r --in-place --ignore E501 predictormanagerservice/ test/ 
-
-Run tox directly:
-
-.. code:: bash
-
-    $ cd predictor-management
-    $ tox
-
-You can also specify certain tox environments to test:
-
-.. code:: bash
-
-    $ tox -e py34  # only test against Python 3.4
-    $ tox -e flake8  # only lint code
-
-And finally, you can run pytest directly in your environment *(recommended starting place)*:
-
-.. code:: bash
-
-    $ pytest
-    $ pytest -s   # verbose output
+        https://docs.mongodb.com/manual/administration/install-on-linux/
