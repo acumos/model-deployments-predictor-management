@@ -1,14 +1,14 @@
 .. ===============LICENSE_START=======================================================
 .. Acumos CC-BY-4.0
 .. ===================================================================================
-.. Copyright (C) 2017 AT&T Intellectual Property. All rights reserved.
+.. Copyright (C) 2017-2018 AT&T Intellectual Property. All rights reserved.
 .. ===================================================================================
 .. This Acumos documentation file is distributed by AT&T
 .. under the Creative Commons Attribution 4.0 International License (the "License");
 .. you may not use this file except in compliance with the License.
 .. You may obtain a copy of the License at
 ..
-.. http://creativecommons.org/licenses/by/4.0
+..      http://creativecommons.org/licenses/by/4.0
 ..
 .. This file is distributed on an "AS IS" BASIS,
 .. WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -16,17 +16,13 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-============================
-Acumos Predictor Management
-============================
+=============================================
+Mongo DB Server Instructions
+=============================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+This mS uses mongoDB server community edition to store its documents and collections
+Note: Clients who want to run these mS on their own Linux environments have to install mongoDB server
 
-   overview
-   release-notes
-   developer-guide
-   database-install
+Installation detail available at mongodb wiki
 
-* :ref:`search`
+        https://docs.mongodb.com/manual/administration/install-on-linux/
