@@ -5,11 +5,11 @@ project_category: ''
 lifecycle_state: 'Incubation'
 project_lead: &acumos_model-deployments/predictor-management_ptl
     name: 'Bryan Sullivan'
-    email: 'TBD@research.att.com'
-    id: 'TBD'
+    email: 'bryan.sullivan@research.att.com'
+    id: 'bs3131'
     company: 'AT&T Labs-Research'
-    timezone: 'America/New_York'
-primary_contact: *acumos_model-deployments/predictor-management_ptl
+    timezone: 'America/Los_Angeles'
+primary_contact: *acumos_model-deployments_ptl
 issue_tracking:
     type: 'jira'
     url: 'https://jira.acumos.org/projects/ACUMOS'
@@ -34,10 +34,20 @@ repositories:
     - 'model-deployments/predictor-management'
 committers:
     - <<: *acumos_model-deployments/predictor-management
+    - name: 'Pavel Kazakov'
+      email: 'pk9069@att.com'
+      company: 'ATT'
+      id: 'pk9069'
+      timezone: 'America/Los_Angeles'
+    - name: 'Karthic Raghavan'
+      email: 'kr577p@att.com'
+      company: 'ATT'
+      id: 'kr577p'
+      timezone: 'America/Los_Angeles'
     - name: 'Ryan Hull'
-      email: 'rh1832.att.com'
+      email: 'rh1832@att.com'
       company: 'ATT'
       id: 'rh1832'
-      timezone: 'America/New_York'
+      timezone: 'America/Chicago'
 tsc:
     approval: 'https://lists.acumos.org/g/tscgeneral'
