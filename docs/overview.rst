@@ -27,11 +27,11 @@ with a swagger spec detailing each endpoint.
 
 The source is available from the Linux Foundation Gerrit server:
 
-    https://gerrit.acumos.org/r/gitweb?p=on-boarding/predictor-management.git;a=summary
+    https://gerrit.acumos.org/r/gitweb?p=model-deployments/predictor-management.git;a=summary
 
 The CI/CD jobs are in the Linux Foundation Jenkins server:
 
-    https://jenkins.acumos.org/view/on-boarding-predictor-management/
+    https://jenkins.acumos.org/view/model-deployments/predictor-management/
 
 Issues are tracked in the Linux Foundation Jira server:
 

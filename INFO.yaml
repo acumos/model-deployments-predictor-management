@@ -4,12 +4,12 @@ project_creation_date: '2018-09-11'
 project_category: ''
 lifecycle_state: 'Incubation'
 project_lead: &acumos_model-deployments/predictor-management_ptl
-    name: 'Bryan Sullivan'
-    email: 'TBD@research.att.com'
-    id: 'TBD'
-    company: 'AT&T Labs-Research'
-    timezone: 'America/New_York'
-primary_contact: *acumos_model-deployments/predictor-management_ptl
+    name: 'Philippe Dooze'
+    email: 'philippe.dooze@orange.com'
+    id: 'PhilippDo'
+    company: 'Orange'
+    timezone: 'Europe/Paris'
+primary_contact: *acumos_model-deployments_ptl
 issue_tracking:
     type: 'jira'
     url: 'https://jira.acumos.org/projects/ACUMOS'
@@ -35,9 +35,9 @@ repositories:
 committers:
     - <<: *acumos_model-deployments/predictor-management
     - name: 'Ryan Hull'
-      email: 'rh1832.att.com'
+      email: 'rh1832@att.com'
       company: 'ATT'
       id: 'rh1832'
-      timezone: 'America/New_York'
+      timezone: 'America/Central'
 tsc:
     approval: 'https://lists.acumos.org/g/tscgeneral'
