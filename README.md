@@ -2,7 +2,7 @@
 
 This repository holds the server components of the Predictor Management Service
 for the Acumos machine-learning platform.  The service provides the ability to undeploy 
-model (predictors) and clean up resources.   It also operationalizes Models built on popular 
+model (predictors) and clean up resources.   It also operationalizes models built on popular 
 AI tools in the industry and stores metadata about those models in a relational database.
 
 Please see the documentation in the "docs" folder.

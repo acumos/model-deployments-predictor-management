@@ -16,9 +16,9 @@
 .. limitations under the License.
 .. ===============LICENSE_END=========================================================
 
-==========================
+============================
 Acumos Predictor Management
-==========================
+============================
 
 .. toctree::
    :maxdepth: 2
@@ -27,5 +27,6 @@ Acumos Predictor Management
    overview
    release-notes
    developer-guide
+   database-install
 
 * :ref:`search`
