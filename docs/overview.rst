@@ -20,23 +20,23 @@
 Predictor Management Service Overview
 ============================
 
-The Acumos Predictor Management service provides a way to deploy and clean up models (predictors)
-as well as storing associated metadata about the predictor. The Acumos 
+The Acumos Predictor Management service provides a way to deploy and clean up models
+(predictors)as well as storing associated metadata about the predictor. The Acumos 
 Predictor Management service is a Flask application that provides RESTFul endpoints,
 with a swagger spec detailing each endpoint.
 
 The source is available from the Linux Foundation Gerrit server:
 
-    https://gerrit.acumos.org/r/gitweb?p=on-boarding/predictor-management.git;a=summary
+  https://gerrit.acumos.org/r/gitweb?p=model-deployments/predictor-management.git;a=summary
 
 The CI/CD jobs are in the Linux Foundation Jenkins server:
 
-    https://jenkins.acumos.org/view/on-boarding-predictor-management/
+  https://jenkins.acumos.org/view/model-deployments/predictor-management/
 
 Issues are tracked in the Linux Foundation Jira server:
 
-    https://jira.acumos.org/secure/Dashboard.jspa
+  https://jira.acumos.org/secure/Dashboard.jspa
 
 Further information is available from the Linux Foundation Wiki:
 
-    https://wiki.acumos.org/
+  https://wiki.acumos.org/

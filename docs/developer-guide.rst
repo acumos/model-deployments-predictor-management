@@ -24,21 +24,21 @@ Testing
 =======
 
 We use a combination of ``tox``, ``pytest``, and ``flake8`` to test
-``model_management``. Code which is not PEP8 compliant (aside from E501) will be
+``predictor-management``. Code which is not PEP8 compliant (aside from E501) will be
 considered a failing test. You can use tools like ``autopep8`` to
 “clean” your code as follows:
 
 .. code:: bash
 
     $ pip install autopep8
-    $ cd model-management
-    $ autopep8 -r --in-place --ignore E501 acumo_model_management/ testing/ examples/
+    $ cd predictor-management
+    $ autopep8 -r --in-place --ignore E501 predictormanagerservice/ test/ 
 
 Run tox directly:
 
 .. code:: bash
 
-    $ cd model-management
+    $ cd predictor-management
     $ tox
 
 You can also specify certain tox environments to test:
