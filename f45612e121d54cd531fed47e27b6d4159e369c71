@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "13f29ed4_784ff37f",
+        "filename": "LICENSE.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-13T14:44:04Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "f45612e121d54cd531fed47e27b6d4159e369c71",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e98d1189_409f4b0e",
+        "filename": "predictormanagerservice/api/namespaces.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-13T14:44:04Z",
+      "side": 1,
+      "message": "renove techM",
+      "revId": "f45612e121d54cd531fed47e27b6d4159e369c71",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "95844f8f_50538daa",
+        "filename": "predictormanagerservice/api/restplus.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 225
+      },
+      "writtenOn": "2018-09-13T14:44:04Z",
+      "side": 1,
+      "message": "remove techM",
+      "revId": "f45612e121d54cd531fed47e27b6d4159e369c71",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bd241db1_340f6a93",
         "filename": "setup.py",
         "patchSetId": 1
