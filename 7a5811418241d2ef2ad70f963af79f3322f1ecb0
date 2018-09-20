@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ce5292b_34ca2118",
+        "filename": "docs/release-notes.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-20T11:37:35Z",
+      "side": 1,
+      "message": "pls fix header-format (\"\u003d\") line length to match text",
+      "revId": "7a5811418241d2ef2ad70f963af79f3322f1ecb0",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a90c41c_6f27e912",
+        "filename": "setup.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-20T11:37:35Z",
+      "side": 1,
+      "message": "Please make line 1 the highly recommend preamble: #!/usr/bin/env python3",
+      "revId": "7a5811418241d2ef2ad70f963af79f3322f1ecb0",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2da4f1ab_6896498c",
+        "filename": "test/unit_test/test_flask_pytest.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-09-20T11:37:35Z",
+      "side": 1,
+      "message": "Please make line 1 the highly recommend preamble: #!/usr/bin/env python3",
+      "revId": "7a5811418241d2ef2ad70f963af79f3322f1ecb0",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
