@@ -1,6 +1,5 @@
-#
 # ===============LICENSE_START=======================================================
-# Acumos
+# Acumos Apache-2.0
 # ===================================================================================
 # Copyright (C) 2018 AT&T Intellectual Property. All rights reserved.
 # ===================================================================================
@@ -9,15 +8,26 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # This file is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-from app import app, initialize_app
-initialize_app(app)
+import logging
+from datetime import datetime
 
-if __name__ == "__main__":
-    app.run()
+
+def generate_predictor_key(username):
+    delimiter = '_'
+    name = ""
+    now = datetime.now().strftime("%Y%m%d%H%M%S")
+    if '@' in username:
+        name = username.split('@')[0] + delimiter + str(now)
+    else:
+        name = username + delimiter + str(now)
+
+    logging.info("generate_predictor_key %s", name)
+    return name
+

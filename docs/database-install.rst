@@ -23,6 +23,8 @@ Mongo DB Server Instructions
 This mS uses mongoDB server community edition to store its documents and collections
 Note: Clients who want to run these mS on their own Linux environments have to install mongoDB server
 
+The basic setup requires that a user with a password is configured as well as a DB the user can access.   The database settings can be passed into a service as a parameter or defaulted to use the ones in /properties/settings.cfg.
+
 Installation detail available at mongodb wiki
 
         https://docs.mongodb.com/manual/administration/install-on-linux/
