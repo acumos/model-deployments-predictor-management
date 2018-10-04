@@ -19,10 +19,20 @@
 ===================================================
 Acumos Predictor Management Python Developer Guide
 ===================================================
-More coming soon!
+This service stores the predictor details in a mongo DB and provides crud operations on the predictor resources.  The connection to mongodb can be configured by passing in a settings.cfg either as a parameter on command line or using the one stored in the properties folder and setting with the correct values.
+
+The main class to start this service is /predictor-management/run.py
+
+The command line interface gives options to run the application.   Type help for a list of available options.   
+> python run.py  help
+usage: run.py [-h] [--host HOST] [--settings SETTINGS]  [--port PORT]
+
+By default without adding arguments the swagger interface should be available at: http://localhost:8085/v2/
 
 Testing
 =======
+
+The only prerequisite for running testing is installing python and tox.   It is recommended to use a virtual environment for running any python application.  If using a virtual environment make sure to run “pip install tox” to install it
 
 We use a combination of ``tox``, ``pytest``, and ``flake8`` to test
 ``predictor-management``. Code which is not PEP8 compliant (aside from E501) will be
