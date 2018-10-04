@@ -16,10 +16,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-
+from os.path import dirname, abspath, join as path_join
 from setuptools import setup, find_packages
 
-version = __import__('predictormanagerservice').get_version()
+
+SETUP_DIR = abspath(dirname(__file__))
+
+with open(path_join(SETUP_DIR, 'predictormanagerservice', '_version.py')) as file:
+    globals_dict = dict()
+    exec(file.read(), globals_dict)
+    __version__ = globals_dict['__version__']
 
 with open("README.md") as fd:
     long_description = fd.read()
@@ -32,7 +38,6 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
@@ -43,6 +48,7 @@ setup(
     tools in the industry """,
     install_requires=['Flask>=1.0.2',
                       'flask-restplus>=0.11.0',
+                      'flask-mongoengine>=0.9.5',
                       'gunicorn>=19.9.0',
                       'flask-cors>=3.0.6'],
     keywords='acumos machine learning model runner server predictor ml ai',
@@ -50,7 +56,7 @@ setup(
     long_description=long_description,
     name='predictor-management',
     packages=find_packages(),
-    python_requires='>=3.4',
+    python_requires='>=3.5',
     url='https://gerrit.acumos.org/r/#/admin/projects/model-deployments/predictor-management.git',
-    version=version,
+    version=__version__,
 )

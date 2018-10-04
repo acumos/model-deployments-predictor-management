@@ -31,7 +31,7 @@ The source is available from the Linux Foundation Gerrit server:
 
 The CI/CD jobs are in the Linux Foundation Jenkins server:
 
-  https://jenkins.acumos.org/view/model-deployments/predictor-management/
+  https://jenkins.acumos.org/view/model-deployments/
 
 Issues are tracked in the Linux Foundation Jira server:
 
@@ -40,3 +40,5 @@ Issues are tracked in the Linux Foundation Jira server:
 Further information is available from the Linux Foundation Wiki:
 
   https://wiki.acumos.org/
+
+  

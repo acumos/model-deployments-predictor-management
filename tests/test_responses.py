@@ -16,24 +16,24 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 
-from flask import Blueprint
-from flask_restplus import Api
 
-import logging
+from acumoscommon.responses import error_response, bad_request, not_found, created_response, \
+    no_content_response
+from flask import Flask
+from werkzeug.exceptions import BadRequest
 
-logger = logging.getLogger(__name__)
-
-
-authorizations = {
-    'basicAuth': {
-        'type': 'basic',
-    }
-}
-
-blueprint_v2 = Blueprint('acumos', __name__, url_prefix='/v2')
+import pytest
 
 
-api_v2 = Api(blueprint_v2, version='2.0.0', title='Acumos Predictor REST Service',
-             default_label='Predictor Manager', validate=True,
-             description='The Predictor Manager provides RESTful interfaces to manage the lifecycle of a predictor.',
-             authorizations=authorizations, security='basicAuth')
+app = Flask(__name__)
+
+
+def test_error_response():
+    with app.test_request_context():
+        with pytest.raises(BadRequest):
+            error_response(400, 'test')
+
+def test_bad_request():
+    with app.test_request_context():
+        with pytest.raises(BadRequest):
+            bad_request('test')

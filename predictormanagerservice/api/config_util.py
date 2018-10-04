@@ -15,25 +15,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-
-from flask import Blueprint
-from flask_restplus import Api
-
 import logging
-
-logger = logging.getLogger(__name__)
-
-
-authorizations = {
-    'basicAuth': {
-        'type': 'basic',
-    }
-}
-
-blueprint_v2 = Blueprint('acumos', __name__, url_prefix='/v2')
+from datetime import datetime
 
 
-api_v2 = Api(blueprint_v2, version='2.0.0', title='Acumos Predictor REST Service',
-             default_label='Predictor Manager', validate=True,
-             description='The Predictor Manager provides RESTful interfaces to manage the lifecycle of a predictor.',
-             authorizations=authorizations, security='basicAuth')
+def generate_predictor_key(username):
+    delimiter = '_'
+    name = ""
+    now = datetime.now().strftime("%Y%m%d%H%M%S")
+    if '@' in username:
+        name = username.split('@')[0] + delimiter + str(now)
+    else:
+        name = username + delimiter + str(now)
+
+    logging.info("generate_predictor_key %s", name)
+    return name
+
