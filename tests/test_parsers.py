@@ -16,24 +16,31 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 
-from flask import Blueprint
-from flask_restplus import Api
 
-import logging
+from predictormanagerservice.api.v2.parsers import PredictorParser
+from datetime import datetime
 
-logger = logging.getLogger(__name__)
-
-
-authorizations = {
-    'basicAuth': {
-        'type': 'basic',
-    }
-}
-
-blueprint_v2 = Blueprint('cmlp', __name__, url_prefix='/v2')
+import pytz
 
 
-api_v2 = Api(blueprint_v2, version='2.0.0', title='Acumos Predictor Catalog REST Service',
-             default_label='Acumos Predictor Manager', validate=True,
-             description='The Acumos Catalog provides RESTful interfaces to manage the lifecycle of a predictor.',
-             authorizations=authorizations, security='basicAuth')
+class MockedPredictorDocument():
+    def __init__(self):
+        self.predictor_key = '1234'
+        self.predictor_name = 'name1'
+        self.predictor_version = '1234'
+        self.predictor_type = 'H2O'
+        self.description = 'Mock Desc'
+        self.status = 'test'
+
+
+def test_as_dict():
+    parsed_dict = PredictorParser(MockedPredictorDocument()).as_dict()
+    assert parsed_dict.get('predictorKey') == '1234'
+    assert parsed_dict.get('predictorName') == 'name1'
+    assert parsed_dict.get('predictorVersion') == '1234'
+    assert parsed_dict.get('predictorType') == 'H2O'
+    assert parsed_dict.get('description') == 'Mock Desc'
+    assert parsed_dict.get('status') == 'test'
+    
+    
+
