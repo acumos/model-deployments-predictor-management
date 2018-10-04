@@ -16,10 +16,12 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 
-_VERSION = '0.1.0'
+VERSION = (0, 1, 0)
 
 
 def get_version():
-    # method is used instead of calling _VERSION directly in the event we wish to internally change the way version is
-    # stored but still want to do a conversion to make it PEP 440-compliant
-    return _VERSION
+    """Returns the VERSION constant as a PEP 440-compliant string"""
+    return '.'.join(map(str, VERSION))
+
+
+__version__ = get_version()

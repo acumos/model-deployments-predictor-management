@@ -43,6 +43,7 @@ setup(
     tools in the industry """,
     install_requires=['Flask>=1.0.2',
                       'flask-restplus>=0.11.0',
+                      'flask-mongoengine>=0.9.5',
                       'gunicorn>=19.9.0',
                       'flask-cors>=3.0.6'],
     keywords='acumos machine learning model runner server predictor ml ai',

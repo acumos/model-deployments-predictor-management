@@ -1,7 +1,7 @@
 # ===============LICENSE_START=======================================================
 # Acumos Apache-2.0
 # ===================================================================================
-# Copyright (C) 2018 AT&T Intellectual Property. All rights reserved.
+# Copyright (C) 2017-2018 AT&T Intellectual Property. All rights reserved.
 # ===================================================================================
 # This Acumos software file is distributed by AT&T
 # under the Apache License, Version 2.0 (the "License");
@@ -16,24 +16,8 @@
 # limitations under the License.
 # ===============LICENSE_END=========================================================
 
-from flask import Blueprint
-from flask_restplus import Api
+from predictormanagerservice.app import initialize_app
+from flask import Flask
 
-import logging
-
-logger = logging.getLogger(__name__)
-
-
-authorizations = {
-    'basicAuth': {
-        'type': 'basic',
-    }
-}
-
-blueprint_v2 = Blueprint('cmlp', __name__, url_prefix='/v2')
-
-
-api_v2 = Api(blueprint_v2, version='2.0.0', title='Acumos Predictor Catalog REST Service',
-             default_label='Acumos Predictor Manager', validate=True,
-             description='The Acumos Catalog provides RESTful interfaces to manage the lifecycle of a predictor.',
-             authorizations=authorizations, security='basicAuth')
+application = Flask(__name__)
+initialize_app(application)
