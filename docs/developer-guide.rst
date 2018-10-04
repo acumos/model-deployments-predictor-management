@@ -19,10 +19,79 @@
 ===================================================
 Acumos Predictor Management Python Developer Guide
 ===================================================
-More coming soon!
+This service stores the predictor details in a mongo DB and provides crud operations on the predictor resources.  The connection to mongodb can be configured by passing in a settings.cfg either as a parameter on command line or using the one stored in the properties folder and setting with the correct values.
+
+The main class to start this service is /predictor-management/run.py
+
+The command line interface gives options to run the application.   Type help for a list of available options.   
+> python run.py  help
+usage: run.py [-h] [--host HOST] [--settings SETTINGS]  [--port PORT]
+
+By default without adding arguments the swagger interface should be available at: http://localhost:8085/v2/
 
 Testing
 =======
+
+The only prerequisite for running testing is installing python and tox.   It is recommended to use a virtual environment for running any python application.  If using a virtual environment make sure to run “pip install tox” to install it
+
+To setup MongoDB for testing please visit https://docs.mongodb.com/manual/administration/install-on-linux/
+
+As mentioned in the database install guide these are the settings in properties/settings.cfg that are needed to connect to a mongo instance.
+
+.. code:: bash
+
+    $ [MONGO]
+    $ mongo_dbname = TEST_DB
+    $ mongo_username = someuser
+    $ mongo_password = dummy
+    $ mongo_host = localhost
+    $ mongo_port = 27017
+
+There are many guides for installing Mongo but a general setup may go something like this:
+
+Set up the config file for MongoDB
+\Path\to\Mongo\MongoDB\Server\3.2\mongod.cfg
+.. code:: bash
+
+    $ 
+    $ systemLog:
+    $     destination: file
+    $     path: \location\data\log\
+    $ storage:
+    $     dbPath: \location\data\db
+
+Start the mongo service from command line
+
+.. code:: bash
+
+    $ # Create admin user
+    $ use admin
+    $ db.createUser( { user: "admin", pwd: "password", roles: [{ role: "dbOwner", db: "admin" }] } )
+    $ 
+    $ # Create Database and user login for dbOwner
+    $ use ACUMOS_DB
+    $ db.createUser( { user: "someuser", pwd: "**ChangeMe**", roles: [{ role: "dbOwner", db: "ACUMOS_DB" }] } )
+    $ 
+    $ # Validate credentials login
+    $ db.auth("someuser", "**ChangeMe***")
+    $ show collections
+    $ 
+    $ # Start mongo with auth to mimic TEST
+    $ mongod —auth —dbpath data/db
+    $ 
+    $ # Login and test user
+    $ mongo
+    $ use ACUMOS_DB
+    $ db.auth("someuser", "**ChangeMe**", ")
+    $ db.predictorcatalog.insert( {"predictorKey":"ABC123", "notes": "Hello World" })  #this is optional
+    $ exit
+
+Once it is setup then make sure to start it with auth enabled
+
+net stop MongoDB <- To kill stop it if its already running
+
+mongod --auth --port 27017 
+
 
 We use a combination of ``tox``, ``pytest``, and ``flake8`` to test
 ``predictor-management``. Code which is not PEP8 compliant (aside from E501) will be

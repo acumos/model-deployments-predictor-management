@@ -23,3 +23,4 @@ Acumos Predictor Management Release Notes
 v0.1.0  09-19-2018
 ------------------
 - Added initial code with swagger specs and unit test cases.
+
