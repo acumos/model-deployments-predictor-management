@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #
 # ===============LICENSE_START=======================================================
 # Acumos
@@ -16,8 +17,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ===============LICENSE_END=========================================================
-from app import app, initialize_app
-initialize_app(app)
-
-if __name__ == "__main__":
-    app.run()
+__version__ = '0.1.0'
