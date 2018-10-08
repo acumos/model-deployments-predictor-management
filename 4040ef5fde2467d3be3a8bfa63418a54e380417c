@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9cfad5f6_1ba4161a",
+        "filename": "docs/database-install.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-08T13:43:52Z",
+      "side": 1,
+      "message": "Please precede with \"::\" and indent 4 spaces so it looks pretty",
+      "range": {
+        "startLine": 27,
+        "startChar": 1,
+        "endLine": 27,
+        "endChar": 6
+      },
+      "revId": "4040ef5fde2467d3be3a8bfa63418a54e380417c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a805cc78_61a6db2d",
+        "filename": "docs/overview.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-10-08T13:43:52Z",
+      "side": 1,
+      "message": "Invalidl URL, please fix",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 34,
+        "endChar": 72
+      },
+      "revId": "4040ef5fde2467d3be3a8bfa63418a54e380417c",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
