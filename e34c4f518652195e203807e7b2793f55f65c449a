@@ -1,0 +1,8 @@
+Verified+1: Acumos Jobbuilder <acumos-jobbuilder@jenkins.acumos.org>
+Code-Review+1: Chris Lott <clott@research.att.com>
+Code-Review+2: Pavel Kazakov <pk9069@att.com>
+Submitted-by: Pavel Kazakov <pk9069@att.com>
+Submitted-at: Tue, 09 Oct 2018 20:26:45 +0000
+Reviewed-on: https://gerrit.acumos.org/r/3119
+Project: model-deployments/predictor-management
+Branch: refs/heads/master
