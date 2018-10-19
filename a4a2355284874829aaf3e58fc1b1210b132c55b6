@@ -1,0 +1,10 @@
+Verified+1: Acumos Jobbuilder <acumos-jobbuilder@jenkins.acumos.org>
+Code-Review+1: Ryan Hull <rh1832@att.com>
+Code-Review+1: Gaurav Sharma <gs495a@att.com>
+Code-Review+1: Abhishek Khandelwal <ak983d@att.com>
+Code-Review+2: Pavel Kazakov <pk9069@att.com>
+Submitted-by: Gaurav Sharma <gs495a@att.com>
+Submitted-at: Fri, 19 Oct 2018 15:21:41 +0000
+Reviewed-on: https://gerrit.acumos.org/r/3171
+Project: model-deployments/predictor-management
+Branch: refs/heads/master
