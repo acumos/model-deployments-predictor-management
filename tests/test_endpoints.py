@@ -31,6 +31,8 @@ app = Flask(__name__)
 with mongo_test_context():
     from predictormanagerservice.app import initialize_app
     initialize_app(app)
+    temporary_directory = tempfile.mkdtemp()
+    app.config['UPLOAD_FOLDER'] = temporary_directory
 
 
 def test_endpoints():

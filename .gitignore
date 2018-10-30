@@ -2,10 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.tox/
 
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+predictor_management.egg-info/
 
 # Django stuff:
 *.log
@@ -35,3 +37,8 @@ ENV/
 
 # ctags
 tags
+
+# settings
+settings.cfg
+properties/settings.cfg
+properties/
