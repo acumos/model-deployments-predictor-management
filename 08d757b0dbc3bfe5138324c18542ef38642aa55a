@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "91013397_e3c5bd2c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-11-09T13:17:54Z",
+      "side": 1,
+      "message": "please remove this blank line, keep the footer lines together",
+      "revId": "08d757b0dbc3bfe5138324c18542ef38642aa55a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "97685dd3_09a69abc",
+        "filename": "Dockerfile",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-11-09T13:17:54Z",
+      "side": 1,
+      "message": "Here also I recommend using a tag, instead of defaulting to \"latest\" version of the image",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 27
+      },
+      "revId": "08d757b0dbc3bfe5138324c18542ef38642aa55a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1e23142_832d94ed",
+        "filename": "Dockerfile",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2018-11-09T13:17:54Z",
+      "side": 1,
+      "message": "I\u0027m not familiar with this practice, why is the port hardwired in the dockerfile? Can this be configurable?  I\u0027m used to configuring the container from the outside via the docker run command.  Just checking.",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 11
+      },
+      "revId": "08d757b0dbc3bfe5138324c18542ef38642aa55a",
+      "serverId": "655300a2-7a56-4504-9153-881edd907bea",
+      "unresolved": false
+    }
+  ]
+}
