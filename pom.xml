@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.acumos.model-deployments</groupId>
     <artifactId>predictor-management</artifactId>
-    <version>0.1.0</version> <!-- REPEATED IN predictormanagerservice/_version.py MUST MATCH -->
+    <version>0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.sources>.</sonar.sources>
